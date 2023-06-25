@@ -1,0 +1,39 @@
+
+######### Executable #########
+Navigation         == Application Developer >> Concurrent >> Executable
+Executable         == PSG_VEHICLE_WISE_CHALLAN
+Short Name         == PSG_VEHICLE_WISE_CHALLAN
+Application        == XXERP Custom Application
+Execution Method   == Oracle Reports
+Execution File Name== PSG_VEHICLE_WISE_CHALLAN
+
+######### Concurrent Program #########
+Navigation    == Application Developer >> Concurrent >> Program
+Program       == PCL Vehicle Challan Report
+Short Name    == PSG_VEHICLE_WISE_CHALLAN
+Application   == XXERP Custom Application
+Execution Name== PSG_VEHICLE_WISE_CHALLAN
+
+########## Parameter ###########
+1. Parameter Name == Organization ; Value Set == PCL_INV_ORG ; Token == P_ORG_ID
+2. Parameter Name == From Date ; Value Set == FND_DATE_STANDARD ; Token == P_FROM_DATE
+3. Parameter Name == To Date ; Value Set == FND_DATE_STANDARD ; Token == P_TO_DATE
+
+######### Data Defination: ########
+Name       == PSG_VEHICLE_WISE_CHALLAN
+Code       == PSG_VEHICLE_WISE_CHALLAN
+Application== XXERP Custom Application
+
+
+######### Data Templete: ########
+Name            == PCL Vehicle Challan Report
+Application     == XXERP Custom Application
+Code            == PSG_VEHICLE_WISE_CHALLAN
+Data Defination == PSG_VEHICLE_WISE_CHALLAN
+
+
+######### Request Group ##########
+Navigation     == System Administrator>>Security >> Responsibility >> Request
+Request Group  == OM Concurrent Programs
+Application    == Order Management
+Program       == PCL Vehicle Challan Report
